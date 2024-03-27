@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <h1>Maximum Subarray Sum with No Adjacent Eements</h1>
+</center>
+
+<script>
+var array = [2, 1, 5, 8, 4]
+function Subarray (){
+    if (array.length === 0){
+        return = 0;
+    }
+    if(array.length == 1){
+        return array[0]
+    }
+    let increment = array[0];
+    let decrement = 0;
+    for(let i=1; i<array.length; i++){
+let thewing = decrement + array [i]
+decrement = Math.max(decrement:increment)
+increment = thewing;
+
+    }
+return math.max(decrement: increment)
+}
+console.log(subarray())
+
+</script>
+</body>
+</html>

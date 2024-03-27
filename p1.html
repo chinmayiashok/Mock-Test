@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+<h1>remove duplicate</h1>
+</center>
+<script>
+    function removeDuplicates(array){
+        let uniqueElements = [];
+        for(let i =0; i<array.length; i++){
+        if(uniqueElements.indexOf(array[i]) === -1){
+
+            uniqueElements.push(array[i]);
+        }
+    }
+    return uniqueElements;
+}
+console.log(removeDuplicates( [1, 2, 2, 3, 4, 4, 5]));
+</script>
+</body>
+</html>
